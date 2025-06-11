@@ -2,10 +2,10 @@
 description: "You don't take a picture, you make one." 
 #lastmod: 2023-07-05
 title: ~/
-resources:
-  - src: 240523.JPG
-    params:
-      cover: true # cover of the home page is used for OpenGraph cards, etc.
+#resources:
+#  - src: 240523.JPG
+#    params:
+#      cover: true # cover of the home page is used for OpenGraph cards, etc.
 menus:
   main:
     name: Home
