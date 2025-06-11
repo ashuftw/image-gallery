@@ -9,7 +9,7 @@ resources:
     title: Bon Hiver!
   - src: 221028.jpeg
     title: "\"If I'm not for myself, who is. If I'm only for myself, who am I?\""
-  - src: 220925.jpg
+  - src: 220925.JPG
     title: BIA
   - src: 220701.jpeg
     title: On the way home.

@@ -9,8 +9,8 @@ resources:
   title: "\"Universe is change, life is opinion.\""
 - src: 230827.jpeg
   title: Somewhere in Bremen.
-- src: 230313.jpg
+- src: 230313.JPG
   title: Sunset by the Stoá.
-- src: 230214.jpg
+- src: 230214.JPG
   title: "\"Beautiful things don't ask for attention.\""
 ---
