@@ -1,9 +1,9 @@
 ---
-description: An example site for hugo-theme-gallery. Images from Unsplash.
+description: "You don't take a picture, you make one." 
 #lastmod: 2023-07-05
-title: Hugo Gallery
+title: ~/
 resources:
-  - src: martin-martz-wRuhOOaG-Z4-unsplash.jpg
+  - src: 240523.JPG
     params:
       cover: true # cover of the home page is used for OpenGraph cards, etc.
 menus:

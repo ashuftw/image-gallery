@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Check if jpegtran is installed
+if ! command -v jpegtran &> /dev/null
+then
+    echo "jpegtran could not be found. Please install it first."
+    exit 1
+fi
+
+# Create a temporary directory
+temp_dir=$(mktemp -d)
+
+# Loop through all JPEG files in the current directory
+for img in *.jpg *.jpeg *.JPG *.JPEG
+do
+    # Check if file exists (to handle cases where no files match the pattern)
+    [ -e "$img" ] || continue
+    
+    echo "Optimizing $img..."
+    
+    # Optimize the image and save to temp directory
+    if jpegtran -optimize -progressive -copy none -outfile "${temp_dir}/${img}" "$img"; then
+        # If optimization was successful, replace the original file
+        mv "${temp_dir}/${img}" "$img"
+        echo "Successfully optimized $img"
+    else
+        echo "Failed to optimize $img"
+    fi
+done
+
+# Remove the temporary directory
+rm -rf "$temp_dir"
+
+echo "All JPEG images have been processed."
