@@ -2,8 +2,9 @@
 date: 2026-10-02
 featured_image: DSCF1283.jpeg
 title: 2026
-featured: true
-private: true # do not show in list, only as feature
+params:
+  featured: true
+  private: true # do not show in list, only as feature
 description: 
 resources:
   - src: "261002.jpeg"
