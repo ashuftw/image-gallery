@@ -9,7 +9,7 @@ title = "ashuftw.com"
 
 [params]
   defaultTheme = "dark"
-  description = "Example site for hugo-theme-gallery"
+  description = "You don't take a picture, you make one."
   title = "My Gallery"
   [params.author]
     email = "user@example.com"
