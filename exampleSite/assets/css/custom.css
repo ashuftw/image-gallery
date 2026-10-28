@@ -33,3 +33,16 @@ body > header {
   margin-bottom: 0;
 }
 */
+
+/* Lightbox: always white, even though the site is dark */
+.pswp {
+  --pswp-bg: var(--surface-1-light);
+  --pswp-placeholder-bg: var(--surface-2-light);
+  --pswp-icon-color: var(--text-1-light);
+  --pswp-icon-color-secondary: var(--surface-1-light);
+  --pswp-icon-stroke-color: var(--surface-1-light);
+}
+
+.pswp__counter {
+  text-shadow: none;
+}

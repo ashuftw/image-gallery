@@ -11,6 +11,10 @@ if (gallery) {
     children: ".gallery-item",
     showHideAnimationType: "zoom",
     bgOpacity: 1,
+    paddingFn: (viewportSize) =>
+      viewportSize.x < 700
+        ? { top: 56, bottom: 8, left: 8, right: 8 }
+        : { top: 40, bottom: 40, left: 64, right: 64 },
     pswpModule: PhotoSwipe,
     imageClickAction: "close",
     closeTitle: params.closeTitle,
